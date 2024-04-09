@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "d3981a34-dfef-49ef-a897-91a5ce6a473e",
+		"name": "Todolist RESTful API kata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33385954"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/todos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"今天要上課\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/todos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/todos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/todos/b6f6d29e-1853-4119-b043-82d42d710ad2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"b6f6d29e-1853-4119-b043-82d42d710ad2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"title\": \"今天要上課\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/todos/73b2d99b-5f8e-4813-ae67-3150084945fb",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"73b2d99b-5f8e-4813-ae67-3150084945fb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得單筆代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/todos/73b2d99b-5f8e-4813-ae67-3150084945fb",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"todos",
+						"73b2d99b-5f8e-4813-ae67-3150084945fb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
